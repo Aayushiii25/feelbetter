@@ -1,0 +1,581 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Mood Swing - Feel Good App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&amp;family=Indie+Flower&amp;family=Pacifico&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Comfortaa", cursive;
+      }
+      .handwritten {
+        font-family: "Indie Flower", cursive;
+      }
+      .signature {
+        font-family: "Pacifico", cursive;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-b from-pink-100 via-purple-100 to-indigo-100 min-h-screen flex flex-col"
+  >
+    <header
+      class="bg-white bg-opacity-80 backdrop-blur-md shadow-md sticky top-0 z-50"
+    >
+      <nav
+        class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-3">
+          <img
+            alt="Smiling pink emoji with heart eyes, representing happiness and positivity"
+            class="w-12 h-12 rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/f584cf41-51c0-4a49-1e36-951ab6e9d768.jpg"
+            width="48"
+          />
+          <h1
+            class="text-3xl font-bold text-pink-600 tracking-wide select-none"
+          >
+            Mood Swing
+          </h1>
+        </div>
+        <ul class="hidden md:flex space-x-8 text-purple-700 font-semibold">
+          <li>
+            <a class="hover:text-pink-500 transition" href="#feel-good">
+              Feel Good
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-pink-500 transition" href="#cute-stuff">
+              Cute Stuff
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-pink-500 transition" href="#games"> Games </a>
+          </li>
+          <li>
+            <a class="hover:text-pink-500 transition" href="#notes"> Notes </a>
+          </li>
+        </ul>
+        <button
+          aria-label="Toggle menu"
+          class="md:hidden text-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-400"
+          id="menu-btn"
+        >
+          <i class="fas fa-bars fa-lg"> </i>
+        </button>
+      </nav>
+      <ul
+        class="md:hidden bg-white bg-opacity-90 backdrop-blur-md shadow-inner flex flex-col space-y-2 px-6 py-4 hidden"
+        id="mobile-menu"
+      >
+        <li>
+          <a
+            class="block text-purple-700 font-semibold hover:text-pink-500 transition"
+            href="#feel-good"
+          >
+            Feel Good
+          </a>
+        </li>
+        <li>
+          <a
+            class="block text-purple-700 font-semibold hover:text-pink-500 transition"
+            href="#cute-stuff"
+          >
+            Cute Stuff
+          </a>
+        </li>
+        <li>
+          <a
+            class="block text-purple-700 font-semibold hover:text-pink-500 transition"
+            href="#games"
+          >
+            Games
+          </a>
+        </li>
+        <li>
+          <a
+            class="block text-purple-700 font-semibold hover:text-pink-500 transition"
+            href="#notes"
+          >
+            Notes
+          </a>
+        </li>
+      </ul>
+    </header>
+    <main class="flex-grow max-w-5xl mx-auto px-6 py-10 space-y-20">
+      <!-- Feel Good Section -->
+      <section
+        class="bg-white bg-opacity-80 backdrop-blur-md rounded-3xl p-8 shadow-lg"
+        id="feel-good"
+      >
+        <h2
+          class="text-4xl font-extrabold text-pink-600 mb-6 text-center tracking-wide"
+        >
+          Feel Good Corner
+        </h2>
+        <article
+          class="prose max-w-none text-purple-900 leading-relaxed text-lg"
+        >
+          <p>
+            Sometimes life feels like a rollercoaster, with ups and downs that
+            can leave you dizzy and unsure. But remember, every twist and turn
+            is part of your unique story. You are stronger than you think,
+            braver than you believe, and more loved than you realize.
+          </p>
+          <p>
+            When the clouds gather and the world feels heavy, take a deep breath
+            and remind yourself: this too shall pass. You have survived every
+            hard day so far, and you will continue to shine through the storms.
+          </p>
+          <p>
+            You are special, even when you annoy me — because that’s what makes
+            you, you. Your quirks, your laughter, your kindness, and even your
+            stubbornness are all pieces of a beautiful puzzle that is uniquely
+            yours.
+          </p>
+          <p>
+            So smile, even if it’s just a little one. You deserve all the
+            happiness in the world.
+          </p>
+        </article>
+        <div class="mt-8 flex justify-center">
+          <img
+            alt="Illustration of a bright yellow sun with a smiling face shining over a field of pink flowers, symbolizing warmth and happiness"
+            class="rounded-xl shadow-lg"
+            height="250"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/c3f5cc6f-b9a7-43e3-7d7f-fa0b2976c04a.jpg"
+            width="400"
+          />
+        </div>
+      </section>
+      <!-- Cute Stuff Section -->
+      <section
+        class="bg-white bg-opacity-80 backdrop-blur-md rounded-3xl p-8 shadow-lg"
+        id="cute-stuff"
+      >
+        <h2
+          class="text-4xl font-extrabold text-pink-600 mb-6 text-center tracking-wide"
+        >
+          Cute Stuff Just for You
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div
+            class="bg-pink-50 rounded-2xl p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-shadow cursor-pointer select-none"
+          >
+            <img
+              alt="Close-up photo of a fluffy cream-colored kitten with big blue eyes sitting on a soft pink blanket"
+              class="rounded-full mb-4 w-36 h-36 object-cover"
+              height="150"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/86e5cdb4-8763-484b-be21-dbaa4243fdf8.jpg"
+              width="150"
+            />
+            <h3 class="text-xl font-semibold text-pink-700 mb-2">
+              Fluffy Kitten
+            </h3>
+            <p class="text-purple-800 text-center">
+              Because everyone needs a little fluff in their life.
+            </p>
+          </div>
+          <div
+            class="bg-pink-50 rounded-2xl p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-shadow cursor-pointer select-none"
+          >
+            <img
+              alt="Cute cupcake with pink frosting and a smiling face drawn on the frosting, sitting on a pastel yellow plate"
+              class="rounded-3xl mb-4 w-36 h-36 object-cover"
+              height="150"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/54f8a3df-56d7-4c55-defa-c2e2b19d2396.jpg"
+              width="150"
+            />
+            <h3 class="text-xl font-semibold text-pink-700 mb-2">
+              Smiling Cupcake
+            </h3>
+            <p class="text-purple-800 text-center">
+              Sweetness and smiles baked just for you.
+            </p>
+          </div>
+          <div
+            class="bg-pink-50 rounded-2xl p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-shadow cursor-pointer select-none"
+          >
+            <img
+              alt="Cartoon style happy white cloud with rosy cheeks and a big smile floating on a bright blue sky background"
+              class="rounded-full mb-4 w-36 h-36 object-cover"
+              height="150"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/d57cf1b1-0a95-4ae9-f207-58d5db4388d6.jpg"
+              width="150"
+            />
+            <h3 class="text-xl font-semibold text-pink-700 mb-2">
+              Happy Cloud
+            </h3>
+            <p class="text-purple-800 text-center">
+              A little fluffy friend to brighten your day.
+            </p>
+          </div>
+          <div
+            class="bg-pink-50 rounded-2xl p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-shadow cursor-pointer select-none"
+          >
+            <img
+              alt="Close-up image of a tiny red heart-shaped balloon floating against a soft pastel pink background"
+              class="rounded-full mb-4 w-36 h-36 object-cover"
+              height="150"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/b380cc46-3760-45f5-2b6e-133ef5ca034e.jpg"
+              width="150"
+            />
+            <h3 class="text-xl font-semibold text-pink-700 mb-2">Tiny Heart</h3>
+            <p class="text-purple-800 text-center">
+              A small reminder that you are loved.
+            </p>
+          </div>
+          <div
+            class="bg-pink-50 rounded-2xl p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-shadow cursor-pointer select-none"
+          >
+            <img
+              alt="Adorable chubby panda sitting and holding a bamboo stick with a playful expression on its face"
+              class="rounded-3xl mb-4 w-36 h-36 object-cover"
+              height="150"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/52914b2e-f5bd-48d9-8392-4eb232e75f48.jpg"
+              width="150"
+            />
+            <h3 class="text-xl font-semibold text-pink-700 mb-2">
+              Chubby Panda
+            </h3>
+            <p class="text-purple-800 text-center">
+              Because pandas make everything better.
+            </p>
+          </div>
+          <div
+            class="bg-pink-50 rounded-2xl p-6 flex flex-col items-center shadow-md hover:shadow-xl transition-shadow cursor-pointer select-none"
+          >
+            <img
+              alt="Illustration of a sparkly golden star with a cute smiling face and twinkling eyes on a soft purple background"
+              class="rounded-full mb-4 w-36 h-36 object-cover"
+              height="150"
+              loading="lazy"
+              src="https://storage.googleapis.com/a1aa/image/547e650d-d0f8-4c56-a97d-1afc5bd994fa.jpg"
+              width="150"
+            />
+            <h3 class="text-xl font-semibold text-pink-700 mb-2">
+              Sparkly Star
+            </h3>
+            <p class="text-purple-800 text-center">
+              Shine bright, no matter what.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Games Section -->
+      <section
+        class="bg-white bg-opacity-80 backdrop-blur-md rounded-3xl p-8 shadow-lg"
+        id="games"
+      >
+        <h2
+          class="text-4xl font-extrabold text-pink-600 mb-6 text-center tracking-wide"
+        >
+          Fun &amp; Games
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <!-- Game 1: Mood Matcher -->
+          <div
+            class="bg-pink-50 rounded-3xl p-6 shadow-md flex flex-col items-center"
+          >
+            <h3 class="text-2xl font-bold text-pink-700 mb-4">Mood Matcher</h3>
+            <p class="text-purple-800 mb-6 text-center">
+              Pick your current mood and get a matching positive message!
+            </p>
+            <select
+              class="mb-6 px-4 py-2 rounded-lg border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400 text-purple-900 font-semibold"
+              id="mood-select"
+            >
+              <option disabled="" selected="" value="">Select your mood</option>
+              <option value="happy">Happy 😊</option>
+              <option value="sad">Sad 😢</option>
+              <option value="angry">Angry 😠</option>
+              <option value="tired">Tired 😴</option>
+              <option value="excited">Excited 🤩</option>
+            </select>
+            <div
+              class="text-center text-lg text-purple-900 font-semibold min-h-[4rem]"
+              id="mood-message"
+            ></div>
+          </div>
+          <!-- Game 2: Quick Compliment -->
+          <div
+            class="bg-pink-50 rounded-3xl p-6 shadow-md flex flex-col items-center"
+          >
+            <h3 class="text-2xl font-bold text-pink-700 mb-4">
+              Quick Compliment
+            </h3>
+            <p class="text-purple-800 mb-6 text-center">
+              Click the button to get a cute compliment just for you!
+            </p>
+            <button
+              class="bg-pink-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-pink-700 transition"
+              id="compliment-btn"
+            >
+              Get Compliment
+            </button>
+            <p
+              class="mt-6 text-center text-purple-900 font-semibold text-lg min-h-[4rem]"
+              id="compliment-text"
+            ></p>
+          </div>
+          <!-- Game 3: Mini Puzzle -->
+          <div
+            class="bg-pink-50 rounded-3xl p-6 shadow-md flex flex-col items-center"
+          >
+            <h3 class="text-2xl font-bold text-pink-700 mb-4">Mini Puzzle</h3>
+            <p class="text-purple-800 mb-6 text-center">
+              Unscramble the word to reveal a positive word!
+            </p>
+            <p
+              class="text-xl font-semibold text-pink-700 mb-4"
+              id="scrambled-word"
+            >
+              LVELO
+            </p>
+            <input
+              class="mb-4 px-4 py-2 rounded-lg border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-400 text-purple-900 font-semibold w-full max-w-xs text-center"
+              id="puzzle-input"
+              placeholder="Type your answer here"
+              type="text"
+            />
+            <button
+              class="bg-pink-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-pink-700 transition"
+              id="puzzle-check-btn"
+            >
+              Check Answer
+            </button>
+            <p
+              class="mt-4 text-center font-semibold min-h-[2rem]"
+              id="puzzle-result"
+            ></p>
+          </div>
+        </div>
+      </section>
+      <!-- Notes Section -->
+      <section
+        class="bg-white bg-opacity-80 backdrop-blur-md rounded-3xl p-8 shadow-lg"
+        id="notes"
+      >
+        <h2
+          class="text-4xl font-extrabold text-pink-600 mb-6 text-center tracking-wide"
+        >
+          Your Special Notes
+        </h2>
+        <p
+          class="text-purple-900 mb-6 text-center max-w-xl mx-auto handwritten text-lg"
+        >
+          Write down your thoughts, feelings, or anything you want to remember.
+          This is your safe space.
+        </p>
+        <textarea
+          class="w-full max-w-3xl mx-auto block rounded-2xl border border-pink-300 p-4 text-purple-900 font-semibold focus:outline-none focus:ring-4 focus:ring-pink-400 resize-y"
+          id="notes-textarea"
+          placeholder="Start typing here..."
+          rows="6"
+        ></textarea>
+        <div class="flex justify-center mt-6 space-x-4">
+          <button
+            class="bg-pink-600 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:bg-pink-700 transition"
+            id="save-notes-btn"
+          >
+            Save Notes
+          </button>
+          <button
+            class="bg-pink-300 text-pink-700 px-8 py-3 rounded-full font-semibold shadow-md hover:bg-pink-400 transition"
+            id="clear-notes-btn"
+          >
+            Clear Notes
+          </button>
+        </div>
+        <p
+          class="mt-4 text-center text-pink-700 font-semibold min-h-[1.5rem]"
+          id="notes-status"
+        ></p>
+      </section>
+    </main>
+    <footer
+      class="bg-white bg-opacity-80 backdrop-blur-md shadow-inner py-6 mt-12"
+    >
+      <div
+        class="max-w-5xl mx-auto px-6 text-center text-purple-700 font-semibold select-none"
+      >
+        Made with
+        <i class="fas fa-heart text-pink-600"> </i>
+        for you. You are special, always.
+      </div>
+    </footer>
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Mood Matcher logic
+      const moodSelect = document.getElementById("mood-select");
+      const moodMessage = document.getElementById("mood-message");
+      const moodMessages = {
+        happy: "Your happiness is contagious! Keep shining bright! 🌟",
+        sad: "It's okay to feel sad. Remember, after rain comes the rainbow. 🌈",
+        angry:
+          "Take a deep breath. You have the power to calm the storm inside. 🌬️",
+        tired: "Rest is important. You deserve a break and some cozy time. 🛌",
+        excited: "Your excitement lights up the world! Spread that joy! 🎉",
+      };
+      moodSelect.addEventListener("change", () => {
+        const val = moodSelect.value;
+        moodMessage.textContent = moodMessages[val] || "";
+      });
+
+      // Quick Compliment logic
+      const complimentBtn = document.getElementById("compliment-btn");
+      const complimentText = document.getElementById("compliment-text");
+      const compliments = [
+        "You're a ray of sunshine on a cloudy day! ☀️",
+        "Your smile can brighten anyone's day! 😊",
+        "You have a heart of gold and it shows! 💛",
+        "You're braver than you believe and stronger than you seem! 💪",
+        "Your kindness is a gift to everyone around you! 🎁",
+        "You make the world a better place just by being you! 🌍",
+        "You are loved more than words can say! ❤️",
+        "Your creativity is inspiring and beautiful! 🎨",
+        "You have a wonderful sense of humor! 😂",
+        "You are enough, just as you are! 🌸",
+      ];
+      complimentBtn.addEventListener("click", () => {
+        const randomIndex = Math.floor(Math.random() * compliments.length);
+        complimentText.textContent = compliments[randomIndex];
+      });
+
+      // Mini Puzzle logic
+      const scrambledWordEl = document.getElementById("scrambled-word");
+      const puzzleInput = document.getElementById("puzzle-input");
+      const puzzleCheckBtn = document.getElementById("puzzle-check-btn");
+      const puzzleResult = document.getElementById("puzzle-result");
+
+      // Words and their scrambled versions
+      const puzzles = [
+        {
+          word: "LOVE",
+          scrambled: "LVELO"
+            .split("")
+            .sort(() => 0.5 - Math.random())
+            .join(""),
+        },
+        {
+          word: "HAPPY",
+          scrambled: "PYHAP"
+            .split("")
+            .sort(() => 0.5 - Math.random())
+            .join(""),
+        },
+        {
+          word: "SMILE",
+          scrambled: "LIMES"
+            .split("")
+            .sort(() => 0.5 - Math.random())
+            .join(""),
+        },
+        {
+          word: "BRAVE",
+          scrambled: "VERAB"
+            .split("")
+            .sort(() => 0.5 - Math.random())
+            .join(""),
+        },
+        {
+          word: "SHINE",
+          scrambled: "HINES"
+            .split("")
+            .sort(() => 0.5 - Math.random())
+            .join(""),
+        },
+      ];
+
+      let currentPuzzleIndex = 0;
+
+      function loadPuzzle(index) {
+        const puzzle = puzzles[index];
+        scrambledWordEl.textContent = puzzle.scrambled;
+        puzzleInput.value = "";
+        puzzleResult.textContent = "";
+      }
+
+      puzzleCheckBtn.addEventListener("click", () => {
+        const answer = puzzleInput.value.trim().toUpperCase();
+        const correctAnswer = puzzles[currentPuzzleIndex].word;
+        if (!answer) {
+          puzzleResult.textContent = "Please enter your answer.";
+          puzzleResult.className =
+            "mt-4 text-center font-semibold text-pink-600";
+          return;
+        }
+        if (answer === correctAnswer) {
+          puzzleResult.textContent = "🎉 Correct! You’re amazing!";
+          puzzleResult.className =
+            "mt-4 text-center font-semibold text-green-600";
+          currentPuzzleIndex = (currentPuzzleIndex + 1) % puzzles.length;
+          setTimeout(() => {
+            loadPuzzle(currentPuzzleIndex);
+          }, 2000);
+        } else {
+          puzzleResult.textContent = "Oops! Try again.";
+          puzzleResult.className =
+            "mt-4 text-center font-semibold text-red-600";
+        }
+      });
+
+      loadPuzzle(currentPuzzleIndex);
+
+      // Notes logic with localStorage
+      const notesTextarea = document.getElementById("notes-textarea");
+      const saveNotesBtn = document.getElementById("save-notes-btn");
+      const clearNotesBtn = document.getElementById("clear-notes-btn");
+      const notesStatus = document.getElementById("notes-status");
+
+      // Load saved notes on page load
+      window.addEventListener("load", () => {
+        const savedNotes = localStorage.getItem("moodSwingNotes");
+        if (savedNotes) {
+          notesTextarea.value = savedNotes;
+        }
+      });
+
+      saveNotesBtn.addEventListener("click", () => {
+        const notes = notesTextarea.value.trim();
+        if (notes.length === 0) {
+          notesStatus.textContent = "Nothing to save. Write something first!";
+          notesStatus.className =
+            "mt-4 text-center text-pink-600 font-semibold";
+          return;
+        }
+        localStorage.setItem("moodSwingNotes", notes);
+        notesStatus.textContent = "Notes saved successfully! 💾";
+        notesStatus.className = "mt-4 text-center text-green-600 font-semibold";
+      });
+
+      clearNotesBtn.addEventListener("click", () => {
+        notesTextarea.value = "";
+        localStorage.removeItem("moodSwingNotes");
+        notesStatus.textContent = "Notes cleared. Start fresh! 🧹";
+        notesStatus.className = "mt-4 text-center text-pink-600 font-semibold";
+      });
+    </script>
+  </body>
+</html>
